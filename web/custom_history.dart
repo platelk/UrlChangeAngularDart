@@ -1,14 +1,3 @@
-UrlChangeAngularDart
-====================
-
-A tiny sample of how to change url without reloading the page with the history API
-
-History API : [history](https://developer.mozilla.org/en-US/docs/Web/Guide/API/DOM/Manipulating_the_browser_history)
-
-With a custom object to fire event when the url change
-
-
-```dart
 import 'dart:html';
 import 'dart:async';
 
@@ -60,4 +49,3 @@ class CustomHistory {
 }
 
 CustomHistory history = new CustomHistory();
-```

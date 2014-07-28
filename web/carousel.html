@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row">
+        <div class=".col-xs-12 .col-md-8" carousel>
+                <div class="container">
+                    <div class="row">
+                        <div class="span2">
+                            <h1>{{ ctrl.section }}</h1>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary" ng-click="ctrl.prevSection()">Prev</button>
+                                <button type="button" class="btn btn-primary" ng-click="ctrl.nextSection()">Next</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 col-md-offset-12">
+            <carousel-element class="center-block"></carousel-element>
+        </div>
+    </div>
+</div>
