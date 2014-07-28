@@ -36,7 +36,7 @@ class CarouselElement {
     this.text = this.getText();
 
     print(window.history.length);
-    window.onHashChange.listen((e) => print(e));
+    window.onHashChange.listen((e) => print("--> ${e}"));
     history.onPushStateEvent.listen((e) {
       print("List on PopState");
       print(e.url.split("/"));

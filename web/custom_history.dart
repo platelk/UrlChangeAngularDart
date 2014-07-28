@@ -24,20 +24,18 @@ class CustomHistory {
     this.onReplaceStateEvent = this._onReplaceStateEvent.stream;
   }
 
-  void back() {
-    window.history.back();
-  }
+  int get length => window.history.length;
+  get state => window.history.state;
 
-  void forward() {
-    window.history.forward();
-  }
+  void back() => window.history.back();
 
-  void go(int distance) {
-    window.history.go(distance);
-  }
+  void forward() => window.history.forward();
+
+  void go(int distance) => window.history.go(distance);
 
   void pushState(Object data, String title, [String url]) {
     window.history.pushState(data, title, url);
+    //window.location.assign(url);
     this._onPushStateEvent.add(new StateEvent(data, title, url));
   }
 
